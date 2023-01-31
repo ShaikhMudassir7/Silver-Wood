@@ -1,0 +1,434 @@
+body {
+  font-family: "HomepageBaukasten-Book";
+  /* background-image: url("../img/whitebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background-color: #fafafa;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 98;
+  background-color: white;
+  padding: 0px !important;
+  border-radius: 0px 0px 0px 0px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdc357;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #858635;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #bdc357;
+}
+::selection {
+  color: white;
+  background: #bdc357;
+}
+
+.text-indent {
+  text-indent: 30px;
+}
+.text-Silver {
+  color: #e8762b;
+  font-family: "Merge Light";
+}
+/* ----------------------------------------------------------
+=========== 1. Fonts ===========
+---------------------------------------------------------- */
+
+@font-face {
+  font-family: "Merge Light";
+  src: url("../fonts/merge_light.otf");
+}
+@font-face {
+  font-family: "HomepageBaukasten-Book";
+  src: url("../fonts/HomepageBaukasten-Book.ttf");
+}
+@font-face {
+  font-family: "HomepageBaukasten-Bold";
+  src: url("../fonts/HomepageBaukasten-Bold.ttf");
+}
+
+/* ----------------------------------------------------------
+=========== 2. Navbar ===========
+---------------------------------------------------------- */
+
+.navbar {
+  padding: 10px 20px;
+  transition: 0.4s;
+  font-family: "Merge Light";
+}
+.navbar .navbar-brand {
+  font-family: "Merge Light";
+  font-size: 20px;
+}
+
+.navbar img {
+  width: 80px;
+}
+
+/* ----------------------------------------------------------
+=========== 3. HomePage ===========
+---------------------------------------------------------- */
+
+/* =========== 3.1. Slider =========== */
+.slider-image {
+  width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.exclamation {
+  font-family: "Merge Light";
+}
+/* =========== 3.2. Amenities =========== */
+section.amenities {
+  margin-top: 40px;
+}
+section.amenities .swiper-container {
+  margin-top: 40px;
+}
+section.amenities .swiper-slide hr {
+  margin-top: -3px;
+}
+section.amenities .swiper-slide p {
+  margin-top: -10px;
+}
+section.amenities h1 {
+  text-align: center;
+  color: #e8762b;
+  font-family: "Merge Light";
+  font-size: 24pt;
+}
+section.amenities hr {
+  width: 50%;
+}
+section.amenities h2 {
+  text-align: center;
+  font-family: "Merge Light";
+  font-size: 18pt;
+}
+section.amenities .col-md-4 {
+  height: 180px;
+}
+section.amenities .swiper-slide i {
+  color: #e8762b;
+  font-size: 30pt;
+}
+section.amenities .swiper-slide h4 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+section.amenities .swiper-slide p {
+  font-size: 10pt;
+}
+section.amenities .icon-image {
+  width: 50px;
+}
+section.amenities .text-sm {
+  font-size: 9px !important;
+}
+section.amenities .amenity p {
+  padding-bottom: 20px;
+}
+
+/* =========== 3.3. Enquiry Form =========== */
+section.enquiry-form {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* position:fixed; stretch a fixed position to the whole screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; /* needed to keep in the background */
+  background: url("../img/3.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.enquiry-form h1 {
+  text-align: center;
+  color: #e8762b;
+  font-family: "Merge Light";
+  font-size: 24pt;
+}
+section.enquiry-form h2 {
+  text-align: center;
+  font-family: "Merge Light";
+  font-size: 18pt;
+  color: #fff;
+}
+
+/* =========== 3.4. Gallery =========== */
+.hvrbox,
+.hvrbox img {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.middle,
+.middle img {
+  width: 100%;
+  height: 420px%;
+}
+
+.hvrbox img {
+  transition: transform 0.5s ease;
+}
+.hvrbox a,
+.hvrbox a:active,
+.hvrbox a:visited,
+.hvrbox a:hover {
+  color: white;
+}
+
+.hvrbox a:hover {
+  text-decoration: underline;
+}
+
+.hvrbox:hover img {
+  transform: scale(1.3);
+}
+
+.hvrbox .hvrbox-layer_scale {
+  border-radius: 50%;
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.hvrbox:hover .hvrbox-layer_scale,
+.hvrbox.active .hvrbox-layer_scale {
+  border-radius: 0%;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+#animated-thumbnails img {
+  width: 20vw;
+  height: auto;
+}
+#animated-thumbnails img:hover {
+  width: 20vw;
+  height: auto;
+  border: 3px solid #e8762b;
+  border-radius: 5px;
+}
+
+/* ----------------------------------------------------------
+=========== 4. Footer ===========
+---------------------------------------------------------- */
+.footer-top {
+  /* border-top: 10px solid transparent;
+  border-image: url('../img/line.png') 30; */
+  background-image: url("../img/logo-yellow.png");
+  height: 60px;
+  background-repeat: repeat-x;
+}
+.logo {
+  width: 60px;
+}
+
+footer h5 {
+  font-family: "Merge Light";
+}
+
+.social-facebook:hover {
+  color: #365899;
+}
+
+.social-instagram:hover {
+  color: #ee1b22;
+}
+
+.social-whatsapp:hover {
+  color: #25d366;
+}
+
+.social-snapchat:hover {
+  color: #f7ec1e;
+}
+
+.social-youtube:hover {
+  color: #ff0000;
+}
+
+.social-google:hover {
+  color: #ee1b22;
+}
+
+/* ----------------------------------------------------------
+=========== 5. Page Headers ===========
+---------------------------------------------------------- */
+.page-header {
+  height: 50vh;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  text-align: center;
+  color: white;
+}
+.page-header h1 {
+  color: #e8762b;
+  font-family: "Merge Light";
+  font-size: 24pt;
+  padding-top: 80px;
+}
+.page-header h2 {
+  text-align: center;
+  font-family: "Merge Light";
+  font-size: 18pt;
+}
+
+.breadcrump {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 10pt;
+}
+.breadcrump a {
+  color: white;
+}
+.breadcrump li {
+  display: inline;
+  content: ">";
+}
+.breadcrump li::after {
+  content: " > ";
+}
+.breadcrump li:last-child:after {
+  content: "";
+}
+
+/* ----------------------------------------------------------
+=========== 6. About Us ===========
+---------------------------------------------------------- */
+.about-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-img {
+  width: 50%;
+  border-radius: 5000px;
+  border: 5px solid #858635;
+  margin-left: 100px;
+}
+
+.logo-contact {
+  width: 80px;
+}
+
+.rounded-more {
+  border-radius: 20px;
+}
+
+.cardSection .card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.2s;
+}
+
+/* ----------------------------------------------------------
+=========== 7. Contact Us  ===========
+---------------------------------------------------------- */
+.contact h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Merge Light";
+}
+
+.contact h6 {
+  font-weight: bold;
+  color: #858635;
+}
+
+.contact a {
+  color: black;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+/* ----------------------------------------------------------
+=========== 8. Preloader  ===========
+---------------------------------------------------------- */
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 999999;
+}
+
+.spinner-wrapper img {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .spinner-wrapper img {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 50%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  section.enquiry-for m {
+    background-image: url("../img/4mobile.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+  }
+  #amenSwiper .col-md-4 {
+    width: 30%;
+    float: left;
+  }
+  .navbar .navbar-brand {
+    font-family: "Merge Light";
+    font-size: 15px;
+  }
+}
